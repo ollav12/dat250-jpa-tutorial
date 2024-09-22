@@ -41,6 +41,7 @@ public class CreditCardsMainTest {
         assertEquals(customer.getAddresses().size(), 1);
         Address address = customer.getAddresses().iterator().next();
 
+
         assertEquals(address.getStreet(), "Inndalsveien");
         assertEquals(address.getNumber(), 28);
         assertEquals(address.getOwners(), Set.of(customer));
