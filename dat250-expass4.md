@@ -8,6 +8,8 @@ Steps/Experiment:
 
 ## Technical problems
 - I had no issues during installation or using JPA.
+- The tests for the tutorial was not working beacuse the test function was outdated for the new junit/jupiter version i was using so i had to modify the
+headers "@" with the respective new headers so instead of @Before i had to use @BeforeEach etc.
 - When working on part two i had issues with the database, and it was caused by me using "limit" as
 a column name. Since "limit" is a reserved keyword in database i chaged the filed to "creditLimit".
 - I decided at the start to use List and ArrayList as collection, but one of the test asserted that it was equal to a "Set". Therefore i had to change my lists to sets so that the test passed.
